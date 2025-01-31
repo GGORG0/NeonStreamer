@@ -1,0 +1,48 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+#video-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#mqtt-status.connected {
+  color: #00ff00;
+}
+
+#mqtt-status.disconnected {
+  color: #ff0000;
+}
+
+#mqtt-status.connecting {
+  color: #ffff00;
+}

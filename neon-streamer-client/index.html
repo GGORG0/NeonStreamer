@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <span id="header">
+      <label for="brokeraddr">Broker:</label>
+      <input id="brokeraddr" type="text" placeholder="ws://localhost" />
+
+      <label for="topic">Topic:</label>
+      <input id="topic" type="text" value="frame" />
+
+      <label for="frame-delay">Frame delay:</label>
+      <input id="frame-delay" type="number" value="100" />
+
+      <button id="start">Start</button>
+    </span>
+
+    <span id="status">
+      <span>
+        MQTT:
+        <span id="mqtt-status" class="disconnected">offline</span>
+      </span>
+      &middot;
+      <span>last frame: <span id="frame-time">0</span>ms</span>
+    </span>
+
+    <div id="video-container">
+      <video id="video" autoplay width="500px"></video>
+
+      <canvas id="canvas" width="64px" height="32px" style="zoom: 8"></canvas>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
