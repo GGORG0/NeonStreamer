@@ -10,7 +10,11 @@ It allows you to stream your screen to the LED matrix via MQTT using a web clien
 
 ## Client usage
 
-The client is made using Vite + Vanilla TypeScript. To run it locally, do:
+The client is made using Vite + Vanilla TypeScript.
+
+It is [deployed on GitHub Pages here](https://ggorg0.github.io/NeonStreamer/).
+
+To run it locally, do:
 
 ```sh
 yarn set version stable # get Yarn v4
