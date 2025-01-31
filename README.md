@@ -6,7 +6,7 @@ My submission for [Hack Club's Neon YSWS](https://neon.hackclub.dev/)!
 
 It allows you to stream your screen to the LED matrix via MQTT using a web client (make sure your broker supports WebSockets and you're connecting to it on the correct port from the web app!).
 
-[Open project in Neon Editor](https://neon.hackclub.dev/open?author=GGORG0&repo=NeonStreamer)
+[Open project in Neon Editor](https://neon.hackclub.dev/open?author=GGORG0&repo=NeonStreamer&branch=master)
 
 ## Client usage
 
